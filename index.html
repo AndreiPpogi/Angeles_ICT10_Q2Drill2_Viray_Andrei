@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Club Members</title>
+
+  <!-- PyScript -->
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+    h1 { font-size: 1.6rem; }
+    input { flex: 1; min-width: 140px; padding: .6rem; font-size: 1rem; border: 1px solid #bbb; border-radius: 6px; }
+    button { padding: .6rem 1.2rem; font-size: 1rem; border: 0; border-radius: 6px; background: #2563eb; color: #fff; cursor: pointer; }
+    button:hover { background: #1d4ed8; }
+  </style>
+</head>
+<body>
+  <h1>Student Club Members</h1>
+
+  <div class="form">
+    <input id="first-name" type="text" placeholder="First name">
+    <input id="last-name" type="text" placeholder="Last name">
+    <button py-click="add_member">Add member</button>
+  </div>
+
+  <div id="output">Loading…</div>
+
+  <!-- Python code lives in main.py -->
+  <script type="py" src="./main.py"></script>
+</body>
+</html>
